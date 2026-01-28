@@ -1,0 +1,37 @@
+[project]
+name = "project_template"
+description = "PJT リポジトリテンプレート"
+authors = [
+    { name = "nwatan" },
+]
+version = "1.0.0"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = []
+
+[dependency-groups]
+dev = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint.per-file-ignores]
+# ignore E402(import violation)
+"__init__.py" = ["E402"]
+
+[tool.pytest]
+minversion = "6.0"
+addopts = "-svv --tb=short --capture=no --full-trace"
+testpaths = ["tests/*"]
+
+[tool.pytest.ini_options]
+# importlib import mode
+# cf. https://docs.pytest.org/en/latest/explanation/goodpractices.html#choosing-a-test-layout
+addopts = [
+    "--import-mode=importlib",
+]

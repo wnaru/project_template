@@ -1,0 +1,29 @@
+{
+    "recommendations": [
+        // Python VsCode拡張
+        "ms-python.python",
+        // Jupyter
+        "ms-toolsai.jupyter",
+
+        // ruff: linter, formatter
+        "charliermarsh.ruff",
+        // ty: 型チェック
+        "astral-sh.ty",
+
+        // autoDocstring
+        "njpwerner.autodocstrin",
+        // Todo Tree
+        "gruntfuggly.todo-tree",
+        // Git Graph
+        "mhutchie.git-graph",
+
+        // indent-rainbow
+        "oderwat.indent-rainbow",
+        // Material Icon Theme
+        "pkief.material-icon-theme",
+        // Rainbow CSV
+        "mechatroner.rainbow-csv",
+
+
+    ]
+}
